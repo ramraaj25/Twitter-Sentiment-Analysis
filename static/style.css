@@ -1,0 +1,233 @@
+body{
+    background-color: black;
+}
+@font-face{
+    font-family: BloggerSans;
+    src: url('/static/Blogger\ Sans-Bold.otf');
+}
+
+@font-face{
+    font-family: BloggerSansLight;
+    src: url('/static/Blogger\ Sans-Light.otf');
+}
+.title-text{
+    margin-top: 60px;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: BloggerSans;
+}
+.title-dot{
+    color: red;
+}
+
+.icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 5px;
+    background-color: black;
+    color: white;
+    transition: transform .2s;
+}
+.icon:hover{
+    transform: scale(1.5);
+}
+
+.h1-text{
+    font-size: 80px;
+}
+.btns{
+    display: inline-block;
+}
+.btn-holder{
+    width: fit-content;
+    height: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    
+}
+.welcome{
+    margin-top: 120px;
+}
+
+.welcome:active{
+    animation-name: animate__zoomOut;
+}
+
+.btn1{
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-family: BloggerSans;
+    font-size: xx-large;
+    background-color: white;
+    transition: all .2s;
+}
+
+.btn1:hover{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border: 3px solid yellow;
+    border-radius: 50px;
+}
+.btn-gs:hover{
+    transform: scale(1.2);
+}
+
+.btn1:active, .btn1:visited, .btn1:focus {
+    text-decoration:none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: BloggerSansLight;
+}
+
+
+.choose-txt{
+    width: fit-content;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-family: BloggerSans;
+    color: white;
+    font-size: x-large;
+}
+
+.btns{
+    display: none;
+}
+
+.btn-nltk{
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+
+.btn-sk{
+    position: relative;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 80px;
+}
+
+
+.cont{
+    width: 80%;
+    height: 300px;
+    position: relative;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.row{
+    text-align: center;
+}
+
+.col{
+    margin: auto;
+}
+
+.btn-choose{
+    font-size: large;
+}
+
+.card{
+    background-color: black;
+    
+    color: white;
+    border-radius: 5px;
+    font-family: BloggerSansLight;
+}
+
+.go-btn{
+    font-size: medium;
+    padding: 5px;
+    margin-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.inp-box{
+    height: 40px;
+    width: 70%;
+    background-color: black;
+    border-radius: 13px;
+    border: 1px solid white;
+    margin: 5px;
+    transition: all .2s;
+    padding: 10px;
+    resize: none;
+}
+
+.inp-box:active, .inp-box:hover{
+    border: 1px solid yellow
+}
+
+.inp-box:focus{
+    background-color: white;
+    color: black;
+    border: 1px solid yellow;
+}
+
+.tweet-inp{
+    height: 100px;
+}
+
+.desc{
+    font-family: BloggerSans;
+    font-size: large;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.tweet-text, .predicted-text{
+    font-family: BloggerSansLight;
+    margin: auto;
+    font-size: large;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    color: white;
+}
+
+.table{
+    width: 900px;
+    height: 300px;
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-family: BloggerSansLight;
+}
+
+.apology{
+    width: fit-content;
+    margin: auto;
+    font-family: BloggerSans;
+    font-size: xx-large;
+    color: white;
+}
+
+.apology > img{
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,5 @@
+flask
+pickle
+tweepy
+nltk
+scikit-learn

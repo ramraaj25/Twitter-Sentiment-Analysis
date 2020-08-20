@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title%}
+Welcome
+{% endblock %}
+
+{% block main %}
+<div class='btn-holder welcome animate__animated'>
+    <a class="btn1 btn-gs" onclick="ani()" href="#">Get Started</a>
+</div>
+
+
+<div class='btn-holder welcome btns animate__animated'>
+    <div class="choose-txt">
+        Choose one of the following python libraries:
+    </div>
+    <a class="animate_animated btn1 btn-sk" href="/sk-learn">SK-Learn</a>
+    <a class="animate_animated btn1 btn-nltk" href="/nltk">NLTK</a>
+</div>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{% if model == 'nltk' %}
+NLTK
+{% else %}
+SK-Learn
+{% endif %}
+{% endblock %}
+
+
+{% block main %}
+<p class="desc">This model has an accuracy score of {{acc}}%</p>
+<div class='cont'>
+    <div class="row">
+        <div class="col">
+            <a class="btn1 btn-choose" data-toggle="collapse" href="#twitter" role="button">From
+                Twitter</a>
+        </div>
+        <div class="col">
+            <a class="btn1 btn-choose" data-toggle="collapse" href="#tweet" role="button">From
+                Tweet</a>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <div class="collapse multi-collapse" id="twitter">
+                <div class="card card-body">
+                    <form action="/{{model}}" method="post">
+                        <input type="text" class="inp-box" name="query" placeholder="Enter search query or a hashtag">
+                        <input type="number" class="inp-box" name="no-of-tweets"
+                            placeholder="Enter no. of tweets to extract">
+                        <br>
+                        <button class="btn1 go-btn" name="from-twitter" value="from-twitter"
+                            type="submit">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="collapse multi-collapse" id="tweet">
+                <div class="card card-body">
+                    <form action="/{{model}}" method="post">
+                        <textarea class="inp-box tweet-inp" name="tweet"></textarea>
+                        <br>
+                        <button class="btn1 go-btn" name="from-tweet" value="from-twitter" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

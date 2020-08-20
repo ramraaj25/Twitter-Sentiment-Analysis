@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Prediction
+{% endblock %}
+
+{% block main %}
+
+<div class="tweet-text">
+    {{tweet}}
+</div>
+<br>
+<div class="predicted-text">
+    {% if model == 'nltk' %}
+    {% for key in prediction %}
+    {{key}}: {{prediction[key]}}
+    <br>
+    {% endfor %}
+    {% else %}
+    {{prediction}}
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Prediction
+{% endblock %}
+
+{% block main %}
+<table class='table table-light'>
+    <thead>
+        <tr>
+            <th>Tweets</th>
+            <th>Prediction</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for tweet in predicted_tweets %}
+        <tr>
+            <td>{{tweet}}</td>
+            <td>
+                {% if model == 'nltk' %}
+                {% for key in predicted_tweets[tweet] %}
+                {{key}}: {{predicted_tweets[tweet][key]}}
+                <br>
+                {% endfor %}
+                {% else %}
+                {{predicted_tweets[tweet]}}
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
